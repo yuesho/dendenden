@@ -1,0 +1,109 @@
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: transparent;
+}
+
+.search-box {
+    position: fixed;
+    top: 15px;
+    left: 120px;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+.nav-links {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+}
+
+body {
+    background-image:
+        linear-gradient(to bottom, rgba(173, 98, 113, 0.7), rgba(255, 214, 222, 0.4)),
+        url("cutetsuki.gif");
+    background-size: cover;
+    background-attachment: fixed;
+    animation: fadeIn 0.5s ease;
+}
+
+h1, h2, h3 {
+    color: maroon;
+    text-shadow: 0 0 8px rgba(255, 42, 109, 0.6);
+}
+
+.search-box input {
+    width: 200px;
+    transition: width 0.3s, box-shadow 0.3s;
+}
+
+.search-box input:focus {
+    width: 260px;
+    outline: none;
+    box-shadow: 0 0 8px #ff2a6d;
+}
+
+
+.search-box button {
+    transition: transform 0.15s;
+}
+
+.search-box button:active {
+    transform: scale(0.9);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+
+.search-box.shake {
+    animation: shake 0.4s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%      { transform: translateX(-8px); }
+    40%      { transform: translateX(8px); }
+    60%      { transform: translateX(-8px); }
+    80%      { transform: translateX(8px); }
+}
+
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow:
+        0 0 5px #ff2a6d,
+        0 0 10px #ff2a6d,
+        0 0 20px #ff2a6d;
+    transition: text-shadow 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd6de;
+    text-shadow:
+        0 0 8px #ff2a6d,
+        0 0 16px #ff2a6d,
+        0 0 30px #ff2a6d,
+        0 0 45px #ff2a6d;
+}
+
+.logo-img {
+    animation: logoFloat 3s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-8px); }
+}
