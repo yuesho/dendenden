@@ -1,7 +1,8 @@
 const pages = [
-    { title: "Itsuki Nakano", url: "index2.html", keywords: ["itsuki", "nakano", "fifth", "home", "keigo", "ahoge", "appearance", "personality", "inori", "minase", "voice", "actor"] },
+    { title: "Itsuki Nakano", url: "index.html", keywords: ["itsuki", "nakano", "fifth", "home", "keigo", "ahoge", "appearance", "personality", "inori", "minase", "voice", "actor"] },
     { title: "Other Characters", url: "characters.html", keywords: ["characters", "nino", "miku", "yotsuba", "ichika", "futaro", "rena"] },
-    { title: "Gallery", url: "gallery.html", keywords: ["gallery", "pictures", "images", "art"] }
+    { title: "Gallery", url: "gallery.html", keywords: ["gallery", "pictures", "images", "art"] },
+    { title: "Ichika Nakano", url: "ichika.html", keywords: ["ichika", "first", "eldest", "oldest", "pink", "kana", "hanazawa"] }
 ];
 
 document.getElementById("search-form").addEventListener("submit", function (event) {
