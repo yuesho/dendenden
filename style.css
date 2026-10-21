@@ -75,6 +75,12 @@ body.ichika-page {
         url(ichikabg.gif);
 }
 
+body.nino-page {
+    background-image:
+        linear-gradient(to bottom, rgba(173, 98, 113, 0.5), rgba(255, 214, 222, 0.3)),
+        url(ninobg.gif);
+}
+
 body.characters-page {
     background-image:
         linear-gradient(to bottom, rgba(173, 98, 113, 0.7), rgba(255, 214, 222, 0.4)),
@@ -83,6 +89,10 @@ body.characters-page {
 
 body.ichika-page .left-sidebar ul {
     color: #7A6A2E;
+}
+
+body.nino-page .left-sidebar ul {
+    color: rgb(138, 55, 140);
 }
 
 body.characters-page .left-sidebar ul {
