@@ -115,11 +115,6 @@ h1, h2, h3 {
     box-shadow: 0 0 8px #ff2a6d;
 }
 
-
-.search-box button {
-    transition: transform 0.15s;
-}
-
 .search-box button:active {
     transform: scale(0.9);
 }
@@ -211,4 +206,70 @@ body.fade-out {
     object-fit: cover;
     object-position: center 20%;
     border-radius: 8px;
+}
+
+.drawer {
+    --drawer-color: #ffb3c8;
+    --handle-color: #ff8fb1;
+    --handle-shadow: #d9668a;
+    --glow-color: rgba(255, 42, 109, 0.5);
+
+    background: rgba(255, 240, 245, 0.85);
+    border: 3px solid var(--drawer-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 0 var(--drawer-color);
+    margin: 20px 0;
+    overflow: hidden;
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.drawer:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 var(--drawer-color), 0 0 12px var(--glow-color);
+}
+
+.drawer summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.drawer summary h2 {
+    margin: 0;
+}
+
+.drawer summary::after {
+    content:"";
+    width: 40px;
+    height: 10px;
+    border-radius: 10px;
+    background: var(--handle-color);
+    box-shadow: 0 2px 0 var(--handle-shadow);
+    transition: transform 0.3s;
+}
+
+.drawer[open] .drawer-content {
+    animation: slideOpen 0.4s ease;
+}
+
+@keyframes slideOpen {
+    from { opacity: 0; transform: translateY(-15px); }
+    to   { opactiy: 1; transform: translateY(0px); }
+}
+
+body.ichika-page .drawer {
+    --drawer-color: #f2c94c;
+    --handle-color: #f2c94c;
+    --handle-shadow: #c9a227;
+    --glow-color: rgba(242, 201, 76, 0.6);
+}
+
+body.nino-page .drawer {
+    --drawer-color: #c9a7ff;
+    --handle-color: #b58cff;
+    --handle-shadow: #8a5fd6;
+    --glow-color: rgba(181, 140, 255, 0.6);
 }
