@@ -81,6 +81,18 @@ body.nino-page {
         url(ninobg.gif);
 }
 
+body.yotsuba-page {
+    background-image:
+        linear-gradient(to bottom, rgba(162, 173, 98, 0.5), rgba(55, 160, 76, 0.3)),
+        url(yotsubg.gif);
+}
+
+body.miku-page {
+    background-image:
+        linear-gradient(to bottom, rgba(127, 141, 203, 0.5), rgba(150, 128, 207, 0.3)),
+        url(mikubg.gif);
+}
+
 body.characters-page {
     background-image:
         linear-gradient(to bottom, rgba(173, 98, 113, 0.7), rgba(255, 214, 222, 0.4)),
@@ -95,6 +107,14 @@ body.nino-page .left-sidebar ul {
     color: rgb(138, 55, 140);
 }
 
+body.yotsuba-page .left-sidebar ul {
+    color: #3e8845
+}
+
+body.miku-page .left-sidebar ul {
+    color: #4a3e88
+}
+
 body.characters-page .left-sidebar ul {
     color: #e0235f
 }
@@ -103,6 +123,7 @@ h1, h2, h3 {
     color: maroon;
     text-shadow: 0 0 8px rgba(255, 42, 109, 0.6);
 }
+
 
 .search-box input {
     width: 200px;
@@ -272,4 +293,18 @@ body.nino-page .drawer {
     --handle-color: #b58cff;
     --handle-shadow: #8a5fd6;
     --glow-color: rgba(181, 140, 255, 0.6);
+}
+
+body.yotsuba-page .drawer {
+    --drawer-color: #adffa7;
+    --handle-color: #8eff8c;
+    --handle-shadow: #65d65f;
+    --glow-color: rgba(148, 255, 140, 0.6);
+}
+
+body.miku-page .drawer {
+    --drawer-color: #a7baff;
+    --handle-color: #56ade7;
+    --handle-shadow: #6476d2;
+    --glow-color: rgba(84, 94, 207, 0.6);
 }
