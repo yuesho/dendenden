@@ -1,11 +1,13 @@
 const pages = [
-    { title: "Itsuki Nakano", url: "index.html", keywords: ["itsuki", "nakano", "fifth", "home", "keigo", "ahoge", "appearance", "personality", "inori", "minase", "voice", "actor"] },
-    { title: "Other Characters", url: "characters.html", keywords: ["characters", "nino", "miku", "yotsuba", "ichika", "futaro", "rena"] },
-    { title: "Gallery", url: "gallery.html", keywords: ["gallery", "pictures", "images", "art"] },
+    { title: "Itsuki Nakano", url: "index.html", keywords: ["itsuki", "nakano", "fifth", "home", "keigo", "ahoge", "appearance", "personality", "inori", "minase"] },
+    { title: "Other Characters", url: "characters.html", keywords: ["characters", "nino", "miku", "yotsuba", "ichika", "futaro", "raiha"] },
+    { title: "Gallery", url: "gallery.html", keywords: ["gallery", "pictures", "images", "art", "music"] },
     { title: "Ichika Nakano", url: "ichika.html", keywords: ["ichika", "first", "eldest", "oldest", "pink", "kana", "hanazawa"] },
     { title: "Nino Nakano", url: "nino.html", keywords: ["nino", "second", "tsundere", "butterfly", "ayana", "taketatsu"] },
-    { title: "Yotsuba Nakano", url: "yotsuba.html", keywords: ["yotsuba", "fourth", "airhead", "athletic", "bunny", "green"] },
-    { title: "Miku Nakano", url: "miku.html", keywords: ["miku", "third", "dandere", "headphones", "blue", "quiet"] }
+    { title: "Yotsuba Nakano", url: "yotsuba.html", keywords: ["yotsuba", "fourth", "airhead", "athletic", "bunny", "green", "ayane", "sakura"] },
+    { title: "Miku Nakano", url: "miku.html", keywords: ["miku", "third", "dandere", "headphones", "blue", "quiet", "ito", "itou"] },
+    { title: "Futaro Uesugi", url: "futaro.html", keywords: ["futaro", "uesugi", "tutor", "rude", "handsome","blunt", "yoshitsugu", "matsuoka"]},
+    { title: "Raiha Uesugi", url: "raiha.html", keywords: ["raiha", "tiny", "supportive", "caring", "cook", "little", "sister", "natsumi", "takamori"]}
 ];
 
 document.getElementById("search-form").addEventListener("submit", function (event) {
